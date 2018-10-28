@@ -116,7 +116,7 @@ for epoch in range(5):
             print("Step %i: loss is %d" % (i, total_loss))
 
     print("Epoch: %i loss: %d\n" % (epoch, total_loss))
-    f = open('vectors_pytorch_%i.txt' % (epoch), 'w')
+    f = open('vectors_pytorch_ReLu_%i.txt' % (epoch), 'w')
     f.write('{} {}\n'.format(NUM_OF_WORDS, EMBEDDING_DIM))
     vectors = model.embeddings.weight.data
     for word, i in wordToint.items():
