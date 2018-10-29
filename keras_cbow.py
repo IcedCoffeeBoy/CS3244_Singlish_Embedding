@@ -101,7 +101,7 @@ model.summary()
 
 model.fit(x, y, epochs=500, batch_size=1024)
 
-f = open('vectors.txt', 'w')
+f = open('vectors_keras_cbow.txt', 'w')
 f.write('{} {}\n'.format(NUM_OF_WORDS, dim_embedddings))
 vectors = model.get_weights()[0]
 for word, i in wordToint.items():
