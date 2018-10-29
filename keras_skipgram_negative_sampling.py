@@ -15,7 +15,7 @@ from keras.models import Sequential, Model
 from keras.preprocessing.sequence import skipgrams
 from keras.preprocessing.text import Tokenizer
 
-df = pd.read_csv('combined_clean_datasets.csv', index_col=None)
+df = pd.read_csv('combined_clean_dataset.csv', index_col=None)
 NUM_SENTENCES = len(df['text'])
 corpus = df['text'].astype(str)
 
